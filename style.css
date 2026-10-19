@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+"{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(img.2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav {
+    border-bottom: 1px solid hwb(64 18% 7%);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #023a16;
+}
+{
+    background-color: hwb(130 1% 73%);
+    height: 700px;
+}
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+}
+.nav-brand {
+    font-family: 'nunito';
+    font-size: 50px;
+    font-weight: 800;
+    color: hsl(80, 23%, 95%);
+}
+.nav-brand2{
+    font-family: 'nunito';
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(249, 244, 244);
+}
+.nav-menu li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.nav-menu li a{
+    color: rgb(221, 232, 23);
+    font-weight: 600;
+}
+.nav-menu li a:hover{
+    color: lab(30.75% 70.74 -95.12);
+}
+.nav-menu li .btn-registrasi{
+    background-color: hwb(253 2% 6%);
+    color: rgb(254, 254, 254);
+    padding: 9px 15px;
+    border-radius: 40px;
+}
+main {
+    width: 1150px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    height: calc(100vh - 80px);
+}
+.tagline {
+   margin-top: 10px;
+   padding-right: 50px;
+}
+.tagline .tag{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(231, 93%, 29%); 
+    margin-bottom: 40px;
+}
+.tagline h1{
+    font-family: 'nunito';
+    font-size: 50px;
+    font-weight: 800;
+    color: oklch(42.588% 0.2753 269.964);
+    margin-bottom: 30px;
+    line-height: 1.0;
+}
+.tagline h2{
+    font-family: 'nunito';
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(123, 0, 0);
+    margin-bottom: 30px;
+    line-height: 0;
+}
+.tagline h3{
+    font-family: 'nunito';
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(218, 232, 220);
+    margin-bottom: 30px;
+    line-height: 0;
+}
+.tagline h4{
+    font-family: 'nunito';
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    line-height: 0;
+}
+.tagline .deskripsi {
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+.btn-more{
+    background-color: hwb(130 1% 73%);
+    color: white;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-more:hover{
+    background-color: lch(17.35% 36.54 42.25);
+    color: white;
+}
+
+.nav-menu .btn-registrasi:hover{
+    background-color: lab(42.18% 52.45 51.56);
+    color: white;
+}
+#about{
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    padding: 80px 30px;
+}
+#about img{
+    width: 300px;
+    margin-right: 100px;
+}
+.title{
+    font-family: 'nunito';
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: hwb(57 14% 7%);
+}
+.title2{
+    font-family: 'nunito';
+    font-size: 20px;
+    color: hwb(256 2% 14%);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.visi-misi p{
+    margin-bottom: 20px;
+}
+.visi-misi .bottom-more{
+    display:inline-block;
+}
+#fasilitas{
+    width: 1150px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+#fasilitas .galeri{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galeri .card{
+    width: 30%;
+    margin: 15px 0;
+}
+.galeri .card img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.galeri .card p{
+    font-weight: 600;
+}
+#kontak{
+    width: 1150px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+#kontak .row{
+    display: flex;
+    justify-content: space-between;
+}
+#kontak .row .map{
+    width: 45%;
+    height: 350px;
+}
+#kontak .row .pesan{
+    width: 80%;
+    text-align: left;
+}
+#kontak .pesan .box{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 27px;
+}
+#kontak .pesan input,
+#kontak .pesan textarea{
+    height: 100%;
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 17px;
+}
+#kontak .pesan .message{
+    height: 100px;
+}
+#kontak .pesan textarea{
+    padding: 10px;
+    resize: none;
+}
+#kontak .pesan .btn-send button{
+    background-color: hwb(130 1% 73%);
+    color: white;
+    padding: 5px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+#registrasi{
+    width: 1150px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+#registrasi p{
+    color: crimson;
+    font-size: 16px;
+}
+#registrasi a{
+    background-color: hwb(130 2% 69%);
+    color: white;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#registrasi a:hover{
+    background-color: lch(43.19% 76.61 44.44);
+    color: white;
+}
+footer{
+    background: #dedede;
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+}
+footer .socials{
+    padding: 20px 0 15px;
+}
+footer .socials a{
+    margin: 10px;
+    font-size: 16px;
+}
+footer .socials a:hover{
+    color: crimson;
+}
+footer .links{
+    margin-bottom: 15px;
+}
+footer .links a{
+    color: black;
+    padding: 15px;
+    font-weight: 500;
+}
+footer .links a:hover{
+    color: crimson;
+}
+footer .credit{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+footer .credit a{
+    font-weight: 700;
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    .nav-content {
+        width: 100%;
+        display: block;
+        padding-left: 12px;
+        margin: auto;
+        height: 110px;
+    }
+    .nav-brand {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .nav-brand2{
+        font-size: 20px;
+        margin-bottom: 25px;
+        
+    }
+    .nav-menu {
+        padding-left: 30px;
+    }
+    .nav-menu li {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .nav-menu li a {
+        font-size: 15px;
+    }
+    .nav-menu .btn-registrasi {
+        padding: 12px 15px;
+    }
+    main{
+        display: block;
+        width: 100%;
+        padding: 40px;
+        height: 680px;
+    }
+    .tagline {
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+    .tagline {
+        font-size: 20px;
+        margin-bottom: 20px;
+    } 
+    .tangline h1 {
+        font-size: 100px;
+        margin-bottom: 20px;
+    }
+    .tagline h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 0px;
+    }
+    .tagline h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 0px;
+    }
+    .tagline h4{
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 0px;
+    }
+    .tagline .deskripsi {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .btn-more {
+        font-size: 10px;
+        padding: 12px 15px;
+    }
+    #home img {
+        width: 80%;
+    }
+    #about{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10;
+        margin-top: 250px;
+    }
+    #about img {
+        height: 300px;
+        margin: 0 auto 10px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .title2 {
+        font-size: 25px;
+    }
+    .visi-misi p {
+        font-size: 15px;
+        margin-bottom: 10;
+    }
+    .visi-misi .bottom-more {
+        margin-top: 10px;
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    #fasilitas{
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    #fasilitas .title{
+        margin-bottom: 10px;
+    }
+    .galeri .card{
+        width: 40%;
+    }
+    .galeri .card img{
+        height: 100px;
+    }
+    .galeri .card p{
+        font-size: 15px;
+    }
+
+    #kontak{
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+    .title{
+        margin-bottom: 10px;
+    }
+    #kontak .row{
+        display: block;
+        width: 100%;
+    }
+    #kontak .row .map{
+        width: 100%;
+    }
+    #kontak .row .pesan{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #kontak .pesan .box{
+        height: 35px;
+        margin-bottom: 27px;
+    }
+    #kontak .pesan input,
+    #kontak .pesan textarea{
+        font-size: 15px;
+    }
+    #kontak .pesan .message{
+        height: 100px;
+    }
+    #kontak .pesan .btn-send button{
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+    footer .links a{
+        font-size: 15px;
+    }
+    #registrasi{
+        width: 100%;
+        margin-top: 70px;
+        padding: 10px;
+    }
+
+}
